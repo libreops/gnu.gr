@@ -162,3 +162,18 @@ h4 {
 #back-top {
     font-size: 2em;
 }
+
+.breadcrumb {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    padding-left: 0px;
+}
+
+.breadcrumb .active {
+    color: black;
+}
+
+.embed-responsive {
+    padding-bottom: 40%;
+}
