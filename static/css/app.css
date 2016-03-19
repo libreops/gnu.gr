@@ -177,3 +177,7 @@ h4 {
 .embed-responsive {
     padding-bottom: 40%;
 }
+
+.text-danger {
+    padding: 15px;
+}

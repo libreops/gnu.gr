@@ -31,19 +31,19 @@
             <li class="active">.register</li>
           </ol>
           <div class="well">
-            <div class="alert alert-warning" role="alert">{notice}</div>
+            <p class="text-danger">{notice}</p>
 
             <form action="{path}" method="POST" class="form-horizontial">
               <div class="form-group">
-                <label class="sr-only" for="username">username</label>
+                <label for="username">username</label>
                 <div class="input-group">
-                  <input type="text" class="form-control" id="username" placeholder="username" name="username" required>
+                  <input type="text" class="form-control" id="username" placeholder="myname" name="username" required>
                   <div class="input-group-addon">@{hostname}</div>
                 </div>
               </div>
               <div class="form-group">
-                <label class="sr-only" for="password">password</label>
-                <input type="password" class="form-control" id="password" placeholder="password" name="password" required>
+                <label for="password">password</label>
+                <input type="password" class="form-control" id="password" placeholder="*******" name="password" required>
               </div>
               <div class="form-group">
                 {captcha}
