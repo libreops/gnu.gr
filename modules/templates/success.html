@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>gnu.gr account registration</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="https://gnu.gr/static/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://gnu.gr/static/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://gnu.gr/static/css/app.css">
-  </head>
-  <body class="register">
+<head>
+  <title>gnu.gr jabber</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://gnu.gr/static/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://gnu.gr/static/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://gnu.gr/static/css/app.css">
+  <link rel="shortcut icon" href="https://gnu.gr/favicon.ico">
+</head>
+<body class="register">
 
-    <div class="alert alert-success" role="alert">Επιτυχής εγγραφή!</div>
-      <p>
-        Ο λογαριασμός σου είναι: <code>{jid}</code>
-      </p>
+  <div id="page">
+
+    <div class="container">
+      <div class="row page-header">
+        <div class="col-md-12">
+          <a href="https://gnu.gr/">
+            <img alt="gnu.gr" class="logo" src="https://gnu.gr/static/img/gnu.png">
+          </a>
+        </div>
+      </div>
     </div>
 
-    <script src="https://gnu.gr/static/js/jquery.min.js"></script>
-    <script src="https://gnu.gr/static/js/bootstrap.min.js"></script>
-    <script src="https://gnu.gr/static/js/app.js"></script>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li><a href="https://gnu.gr/">gnu.gr</a></li>
+            <li class="active">.register</li>
+          </ol>
+          <div class="well">
+            <div class="alert alert-success" role="alert">Επιτυχής εγγραφή!</div>
+            <p>
+              Ο λογαριασμός σου είναι: <code>{jid}</code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  </body>
+</div>
+
+<div class="container">
+  <div id="footer">
+    <i class="fa fa-power-off"></i> powered by <a href="https://www.hackerspace.gr/" target="_blank">Hackerspace.gr</a> &bull;
+    <i class="fa fa-envelope-o"></i> <img src="https://gnu.gr/static/img/email.png" alt="contact">
+  </div>
+</div>
+
+</body>
 </html>
