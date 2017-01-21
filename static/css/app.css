@@ -182,3 +182,7 @@ h4 {
     padding: 15px;
     padding-left: 0px;
 }
+
+.fingerprint {
+    display: block;
+}
