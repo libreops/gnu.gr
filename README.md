@@ -1,9 +1,12 @@
-# gnu.gr
+<a href="https://gnu.gr"><img src="https://gnu.gr/static/img/gnu.png"></a>
 
 gnu.gr is a public jabber/xmpp service.
-This is the source code of its [website](https://gnu.gr)
+This is the source code of its [website](https://gnu.gr).
 
-## license
+## Join
 
-This software is licensed under the [GNU AFFERO GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/agpl-3.0.html).
-For more information, read the [LICENSE](LICENSE) file.
+[![irc](https://img.shields.io/badge/Matrix-%23libreops:matrix.org-blue.svg)](https://riot.im/app/#/room/#libreops:matrix.org)
+
+## License
+
+[![license](https://img.shields.io/badge/license-AGPL%203.0-6672D8.svg)](LICENSE)
