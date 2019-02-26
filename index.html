@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>gnu.gr jabber</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="static/css/app.css">
-  <link rel="shortcut icon" href="favicon.ico">
-</head>
-<body>
+  <head>
+    <title>gnu - jabber</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://libreops.cc/static/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://libreops.cc/static/lib/fork-awesome/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="https://libreops.cc/static/css/app.css">
+    <link rel="prefetch" type="application/l10n" href="static/locales.ini">
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
 
-  <div id="page">
+  <body>
 
-    <div class="container">
-      <div class="row page-header">
-        <div class="col-md-12">
-          <a href="/">
-            <img alt="gnu.gr" class="logo" src="static/img/gnu.png">
-          </a>
+    <div class="page">
+
+      <div class="container">
+        <header class="py-3 text-center">
+          <a href="/"><img src="/static/img/gnu.png" alt="gnu" class="avatar"></a>
+        </header>
+
+        <div class="card w-75 mx-auto">
+          <div class="card-header" data-l10n-id="about-title">
+            about
+            <div class="pull-right">
+              <span id="lang-selection"><span class="fa fa-language pr-2"></span>
+              <select onchange="currentLang=this.value;document.webL10n.setLanguage(this.value || this.options[this.selectedIndex].text);" autocomplete="off">
+                <option id="lang-en" selected value="en">en</option>
+                <option id="lang-el" value="el">el</option>
+              </select>
+            </div>
+          </div>
+          <div class="card-body" data-l10n-id="about-text">
+            <p>
+              Gnu is a public jabber server. Jabber (or xmpp) is an open protocol for realtime communications.
+              In contrast to most similar protocols, it is decentralized. That means that there is no central server,
+              but a network of many equal servers. To some extend, it is similar to how email works.
+            </p>
+            <p>
+              Every user can freely register on
+              <a href="https://xmpp.net/directory.php" target="_blank">any server</a>
+              they like and trust, in order to chat with users across the whole network.
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-md-12">
-        <div class="container">
-          <h3>.about</h3>
-          <div class="well">
-            <p>
-              Το gnu.gr είναι ένας public jabber server. Το Jabber (ή αλλιώς xmpp) είναι ανοιχτό
-              πρωτόκολλο επικοινωνίας πραγματικού χρόνου. Σε αντίθεση με τα περισσότερα πρωτόκολλα,
-              βασίζεται σε αποκεντρωμένη αρχιτεκτονική. Αυτό σημαίνει πως δεν υπάρχει κάποιος κεντρικός
-              server,
-              αλλά το δίκτυο περιλαμβάνει πολλούς ισότιμους servers. Σε μεγάλο βαθμό θυμίζει το email.
-              Κάθε χρήστης μπορεί ελεύθερα να φτιάξει λογαριασμό σε
-              <a href="https://xmpp.net/directory.php" target="_blank">όποιον server</a> θέλει
-              (και εμπιστεύεται) για να συνομιλεί με όλους του χρήστες του δικτύου.
-              Περισσότερες τεχνικές λεπτομέρειες υπάρχουν στο
-              <a href="https://skytal.es/wiki/%CE%91%CF%83%CF%86%CE%B1%CE%BB%CE%AE%CF%82_%CE%B5%CF%80%CE%B9%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%AF%CE%B1_%CE%BC%CE%AD%CF%83%CF%89_Instant_Messaging_%CE%BA%CE%B1%CE%B9_Chat" taget="_blank">skytal.es</a>.
-            </p>
+        <div class="card w-75 mx-auto mt-4">
+          <div class="card-header" data-l10n-id="reg-title">
+            registration
           </div>
-
-          <h3>.εγγραφή</h3>
-          <div class="well">
-            <p>
-              Η υπηρεσία είναι ανοιχτή σε όλους.<br>
-              Η εγγραφή στην υπηρεσία μπορεί να γίνει από τη
-              <a href="https://gnu.gr:5281/register">σχετική φόρμα</a>.
-            </p>
+          <div class="card-body" data-l10n-id="reg-text">
+            The service is open.<br>
+            You can register through <a href="https://gnu.gr:5281/register">this form</a>.
           </div>
+        </div>
 
-          <h3>.εφαρμογές</h3>
-          <div class="well">
-            <p>
-              Υπάρχουν <a href="http://xmpp.org/software/clients.html" target="_blank">πολλές εφαρμογές</a>
-              για jabber. Ενδεικτικά προτείνουμε μερικές που θεωρούνται πιο ασφαλείς.
+        <div class="card w-75 mx-auto mt-4">
+          <div class="card-header" data-l10n-id="apps-title">
+            εφαρμογές
+          </div>
+          <div class="card-body">
+            <p data-l10n-id="apps-text">
+              There are <a href="http://xmpp.org/software/clients.html" target="_blank">many applications</a> for using jabber.
+              Below we suggest some that we consider more secure.
             </p>
-            <table class="applications table table-bordered table-responsive">
+            <table class="table table-bordered text-center">
               <thead>
                 <tr>
                   <th></th>
@@ -69,42 +76,42 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><a href="https://pidgin.im/" target="_blank">Pidgin</a></td>
+                  <td class="text-left"><a href="https://pidgin.im/" target="_blank">Pidgin</a></td>
                   <td><i class="fa fa-check"></i></td>
                   <td><i class="fa fa-check"></i></td>
                   <td></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td><a href="https://adium.im/" target="_blank">Adium</a></td>
+                  <td class="text-left"><a href="https://adium.im/" target="_blank">Adium</a></td>
                   <td></td>
                   <td></td>
                   <td><i class="fa fa-check"></i></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td><a href="https://coy.im/" target="_blank">CoyIM</a></td>
+                  <td class="text-left"><a href="https://coy.im/" target="_blank">CoyIM</a></td>
                   <td><i class="fa fa-check"></i></td>
                   <td><i class="fa fa-check"></i></td>
                   <td><i class="fa fa-check"></i></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td><a href="https://trac.torproject.org/projects/tor/wiki/doc/TorMessenger" target="_blank">TorMessenger</a></td>
+                  <td class="text-left"><a href="https://trac.torproject.org/projects/tor/wiki/doc/TorMessenger" target="_blank">TorMessenger</a></td>
                   <td><i class="fa fa-check"></i></td>
                   <td><i class="fa fa-check"></i></td>
                   <td><i class="fa fa-check"></i></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td><a href="https://chatsecure.org/" target="_blank">Chatsecure</a></td>
+                  <td class="text-left"><a href="https://chatsecure.org/" target="_blank">Chatsecure</a></td>
                   <td></td>
                   <td></td>
                   <td><i class="fa fa-check"></i></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td><a href="https://conversations.im/" target="_blank">Conversations</a></td>
+                  <td class="text-left"><a href="https://conversations.im/" target="_blank">Conversations</a></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -113,18 +120,23 @@
               </tbody>
             </table>
           </div>
+        </div>
 
-          <h3>.ασφάλεια</h3>
-          <div class="well">
-            <p>
-              Η επικοινωνία των παραπάνω εφαρμογών με το gnu.gr γίνεται κρυπτογραφημένα, όπως ακριβώς
-              και η επικοινωνία με τους υπόλοιπους jabber servers.
-            </p>
-            <p>
-              Για κρυπτογραφία από άκρη σε άκρη (end to end) συνίσταται η χρήση του πρωτοκόλου
-              OTR (Off-the-Record). Όλες οι προτεινόμενες παραπάνω εφαρμογές το υποστηρίζουν,
-              είτε εγγενώς είτε μέσω κάποιου plugin.
-            </p>
+        <div class="card w-75 mx-auto mt-4">
+          <div class="card-header" data-l10n-id="sec-title">
+            security
+          </div>
+          <div class="card-body">
+            <div data-l10n-id="sec-text">
+              <p>
+                The above applications communicate with gnu in an encrypted way,
+                same applies to communication with other servers.
+              </p>
+              <p>
+                For end to end encryption we recommend the use of OTR (Off-the-Record) protocol.
+                All of the above suggested applications support this, either by default or through a plugin.
+              </p>
+            </div>
             <p>
               SHA256 Fingerprint
               <code id="fingerprint"></code>
@@ -135,69 +147,66 @@
               </a>
             </p>
           </div>
+        </div>
 
-          <h3>.privacy</h3>
-          <div class="well">
+        <div class="card w-75 mx-auto mt-4">
+          <div class="card-header" data-l10n-id="priv-title">
+            privacy
+          </div>
+          <div class="card-body" data-l10n-id="priv-text">
             <p>
-              Εν μέρει το κίνητρο για τη δημιουργία του gnu.gr ήταν να φτιαχτεί ένας jabber server
-              που θα παρακρατά τον ελάχιστο δυνατό όγκο (μετα)δεδομένων και μόνο αυτών που είναι
-              απαραίτητα για τη λειτουργία του, με σεβασμό στην ιδιωτικότητα των χρηστών.
+              One of the motives for creating gnu was to build a jabber server that will keep a minimum
+              amount of (meta)data and only the bare minimum that is required for its core functionality,
+              in respect to users privacy.
             </p>
 
-            <p>Δεδομένα που <strong>δεν</strong> κρατάει ο server.</p>
+            <p>Data that we <strong>do not</strong> keep on the server</p>
 
             <ul>
               <li>
-                Μεταδεδομένα σύνδεσης. Ακριβή χρόνο και διάρκεια σύνδεσης με την υπηρεσία.
+                Connection metadata. Exact time and duration of connection to the server.
               </li>
               <li>
-                Στοιχεία πρόσβασης (access logs). Τόσο στον jabber server όσο και στον web
-                server που φιλοξενεί το παρόν site.
+                Access logs. Both on the jabber and on the web server that hosts this website.
               </li>
               <li>
-                Δεδομένα συνομιλιών. Μπορεί να είναι προφανές, αλλά είναι σημαντικό να τονιστεί
-                πως ο server δεν έχει γνώση για το περιεχόμενο των συνομιλιών.
+                Chat data. It may seems obvious, but it is important to note that the server
+                has no knowledge to the chats content.
               </li>
             </ul>
 
-            <p>Για τη λειτουργία της υπηρεσίας είναι απαραίτητη η διατήρηση των παρακάτω δεδομένων.</p>
+            <p>In order for this service to work, it is necessary to keep these data.</p>
+
             <ul>
               <li>
-                Οι επαφές των χρηστών (roster). Αυτό εξασφαλίζει πως η λίστα επαφών παραμένει η ίδια
-                για κάθε account ανεξαρτήτως ποια εφαρμογή ή συσκευή χρησιμοποιείται για τη σύνδεση.
+                Users contacts (roster). This ensures that the contact list remains the same for
+                a given account, regardless of which application or device is being used for connection.
               </li>
               <li>
-                Offline μηνύματα. Αυτά είναι εισερχόμενα μηνύματα που αποθηκεύονται στην περίπτωση
-                που ο χρήστης είναι offline. Τα μηνύματα αυτά διαγράφονται όταν ο χρήστης συνδεθεί.
+                Offline messages. These are incoming messages that are stored in case a user is offline.
+                These messages are automatically deleted once the user gets online.
               </li>
-	      <li>
-	        Κρατάμε μια εγγραφή, σε επίπεδο μήνα, για την τελευταία φορά σύνδεσης στον server.
-                Με αυτό τον τρόπο διαγράφουμε λογαριασμούς που είναι ανενεργοί πάνω από ένα χρόνο,
-                ώστε να μην κρατάμε στοιχεία χρηστών που δεν χρησιμοποιούν πια την υπηρεσία ή έχουν ξεχάσει τον κωδικό τους.
-	      </li>
+              <li>
+                We keep a record, on a month basis, for the last time a user is connected to the server.
+                This way we can delete accounts that are inactive for more than a year,
+                so we do not need to keep user data that no longer use our service or have forgotten their password.
+              </li>
             </ul>
-
           </div>
         </div>
       </div>
+
     </div>
 
-  </div>
-
-  <div class="container">
-    <div id="footer">
-      <i class="fa fa-power-off"></i> powered by <a href="https://libreops.cc/" target="_blank">LibreOps</a> &bull;
-      <i class="fa fa-envelope-o"></i> <img src="static/img/email.png" alt="contact">
+    <div class="container">
+      <footer class="w-75 p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <i class="fa fa-power-off" aria-hidden="true"></i> powered by <a href="https://libreops.cc" target="_blank">LibreOps</a>
+      </footer>
     </div>
-  </div>
 
-  <div id="back-top">
-    <a href="#top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
-  </div>
+    <script src="https://libreops.cc/static/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://libreops.cc/static/lib/webl10n/l10n.js"></script>
+    <script src="static/js/app.js"></script>
 
-  <script src="static/js/jquery.min.js"></script>
-  <script src="static/js/bootstrap.min.js"></script>
-  <script src="static/js/app.js"></script>
-
-</body>
+  </body>
 </html>

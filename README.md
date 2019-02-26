@@ -5,7 +5,7 @@ This is the source code of its [website](https://gnu.gr).
 
 ## Support
 
-![Liberapay receiving](https://img.shields.io/liberapay/receives/libreops.svg)
+[![Liberapay receiving](https://img.shields.io/liberapay/receives/libreops.svg)](https://liberapay.com/libreops/donate)
 
 ## Join
 
